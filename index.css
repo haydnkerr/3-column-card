@@ -1,0 +1,142 @@
+/* universal themes */
+
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display:flex;
+    margin:0;
+    background-color: hsl(0, 0%, 95%);
+    height: 100%;
+    padding: 150px;
+    max-width: 1440px;
+    flex-direction: column;
+}
+
+p {
+    font-family: "Lexand Deca", sans-serif;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 50px;
+
+}
+
+.container {
+    display:flex;
+    height: auto;
+    width: 90%;
+    margin: auto;
+    line-height: 24px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: "Big Shoulders Display", sans-serif;
+    color: white;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* sedans container */
+
+.sedans {
+    background-color:  hsl(31, 77%, 52%);
+    padding: 50px;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.sedans img {
+    margin-bottom: 30px;
+}
+
+/*suvs container */
+
+.suvs {
+    background-color: hsl(184, 100%, 22%);
+    padding: 50px;
+}
+
+.suvs img {
+    margin-bottom: 30px;
+}
+
+/* luxury container */
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    padding: 50px;
+}
+
+.luxury img {
+    margin-bottom: 30px;
+}
+
+/* button styling */
+
+.btn {
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 30px;
+    width: 140px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 2px solid hsl(0, 0%, 95%);
+    transition: all 0.4s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    font-family: "Lexand Deca", sans-serif;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid hsl(0, 0%, 95%);
+}
+
+.btn-sedan {
+    color:hsl(31, 77%, 52%);
+}
+
+.btn-suv {
+    color:hsl(184, 100%, 22%);
+}
+
+.btn-luxury {
+    color:hsl(179, 100%, 13%)
+}
+
+/* footer */
+
+.attribution {
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 800px) {
+    .container {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .sedans {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .luxury {
+        border-radius: 0 0 10px 10px;
+    }
+
+    body {
+        padding: 60px 20px;
+
+    }
+
+}
